@@ -1,0 +1,61 @@
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.event-edit-btn, .event-save-btn, .event-add-btn  {
+    background-color:  #008cba;
+}
+
+.event-delete-btn, .event-cancel-btn {
+    background-color:  #c94c4c;
+}
+
+.event-edit-btn, .event-delete-btn, .event-save-btn, .event-cancel-btn, .event-add-btn {
+    width: 30 px;
+    height: 24px;
+    display: block;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.event-edit-btn img, .event-delete-btn img, .event-save-btn img, .event-cancel-btn img, .event-add-btn img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    display: block;
+}
+
+.event {
+    background-color: white;
+    display: table-row;
+}
+
+
+.event td {
+    padding: 12px 16px; /* Increase vertical & horizontal spacing */
+    background-color: #e6e2d3;
+    margin: 5px;
+}
+
+
+table {
+    padding: 12px 16px;
+    border-collapse: collapse;
+    border: 2px solid #e6e2d3;
+    border-radius: 5px;
+}
+
+.add-event-btn {
+    background-color:  #008cba;
+    color: white;
+    border:none;
+    border-radius: 3px;
+    padding: 8px;
+}
