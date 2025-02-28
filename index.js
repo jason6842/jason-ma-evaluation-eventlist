@@ -234,14 +234,16 @@ class EventsController {
             console.log("Event does not exist.");
             return;
         }
-        const originalRow = this.view.editEvent(newEventRow, eventObj);
+
+        const originalHTML = newEventRow.innerHTML;
+        this.view.editEvent(newEventRow, eventObj);
 
         newEventRow.querySelector(".event-save-btn").addEventListener("click", async (e) => {
             await this.handleSaveEditEvent(eventId, newEventRow);
         });
 
         newEventRow.querySelector(".event-cancel-btn").addEventListener("click", () => {
-            newEventRow.innerHTML = originalRow.innerHTML;
+            newEventRow.innerHTML = originalHTML;
         });
     }
 
